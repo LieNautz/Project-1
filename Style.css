@@ -1,11 +1,12 @@
 body * {
-    width: 100%;
+    box-sizing: content-box;
 }
 
 body {
     background-color: mistyrose;
-    margin: 50px;
-    border: 2px red solid;
+    margin: 70px;
+    border: 3px rgb(169, 37, 37) dotted;
+    width: 90%;   
 }
 
 html {
@@ -13,75 +14,92 @@ html {
     background-size: cover;
 }
 
-form * {
-    display: block;
-    margin: 1em;
-}
-
-form a {
-    border: 5px black solid;
-    justify-content: center;
-    width: 50%;
-    margin-left: 26%;
-    background: white;
-}
-
-a {
-    text-align: center;
-   font-size: 150%;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
 h1 {
-text-align: center;
-text-decoration: wavy;
-color:  rgb(199, 43, 43);
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-font-size: 50px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    color: rgb(169, 37, 37);
 }
 
+.box h2 {
+    color: rgb(169, 37, 37);
+
+}
+
+#gallery { /*This is the container for the images */
+    display: inline-flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 4px;
+    color: rgb(169, 37, 37);
+    border: 2px rgb(169, 37, 37) dotted;
+    width: 80%;
+    margin-left: 100px;
+}
+
+#gallery img { /*This is to edit the items inside the container */
+    width: 20%;
+    height: 250px;
+    object-fit: fill;
+    margin-top: 8px;
+    padding: 0 2px;
+    border-radius: 10px;
+  }
+  
 h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
-    font-size: 40px;
-    margin-top: 5px;
+    color: rgb(169, 37, 37);
 }
 
 p {
     font-size: 20px;
-    margin-top: 5px;
-    text-align: center;
 }
 
-form label {
-    font-size: 20px;
-    text-align: center;
+
+
+ #sponsors {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    background: mistyrose;
+ } 
+
+ #sponsors img {
+    object-fit: contain;
+    width: 50%;
+    height: 100px;
+    background-color: mistyrose;
+    padding: 20px;
+    margin-right: 5px;
+    
+ }
+
+
+
+@media  (max-width: 800px) {
+    #gallery img {
+        width: 50%;
+    }
 }
 
-input {
-margin-left: 46%;
+@media (max-width: 600px) {
+    #gallery img {
+        width: 100px;
+    }
 }
 
-form {
-border: 5px solid rgb(10, 10, 10);
+@media (max-width 1000px)
+{ #gallery img {
+    width: 80%;
+    height: 200px;
+}
 }
 
-input {
-    width: 9%;
-}
-
-.box {
-    border: 5px dotted black;
-    padding: 5px;
-    text-align: center;
-    font-size: 20px;
-}
-
-h3 {
-    text-align: center;
-}
-
-img {
-width: 20%;
-display: inline-flex;
-margin-left: 40%;
+footer {
+    text-align:end
 }
