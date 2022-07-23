@@ -28,13 +28,15 @@
     <p>Corgi Rescue is a not-for-profit organisation that rescues, rehabilitates and rehomes Corgis and
         mixed-breed Corgis all over Australia. We are a family run business who has been in operation since 2022,
         resucing and saving corgis of all breeds
-        and
-        finding them new loving homes </p>
+        and finding them new loving homes. </p>
+
+    <p>Our goal is to rescue as many Corgi's as possible and ensuring that our cute furry friends have loving homes. If
+        you are interested in joining the cause please see application process <a href="#volunteer"> here.</a></p>
 
 
     <h2>Recent Rescues</h2>
     <h3>Heather</h3>
-    <div id="gallery">
+    <div id="recent">
         <img src="./Images/corgi-puppies.jpg.webp" alt="Heather">
         <img src="./Images/Heather2.webp" alt="Heather">
         <img src="./Images/heather3.jpg" alt="Heather">
@@ -47,7 +49,7 @@
         looked like she was fed for weeks</p>
 
     <h3>Prince</h3>
-    <div id="gallery">
+    <div id="recent">
         <img src="./Images/prance-8.webp" alt="Prince">
         <img src="./Images/Prince1.jpg" alt="Prince">
         <img src="./Images/Prince2.jpg" alt="Prince">
@@ -59,21 +61,52 @@
     <p>Prince is a 2 year old male Pembroke whose owners neglected him and left him out on the streets to fend for
         himself. We found him close to a dumpster trying to find food and water </p>
 
-
-
     <h2 id="volunteer">Become A Certified Corgi Rescue Operative </h2>
     <p> If you have a passion for saving our cute furry friends, please complete the below form to register your
         interest to becoming a Certified Corgi Rescuer</p>
 
     <form>
-        <label for="Volunteer Name">Volunteers Full Name</label>
-        <input type="text" name="volunteer" placeholder="Enter Volunteer Name" required>
+        <fieldset>
+            <label> Enter Your First Name
+                <input type="text" required>
 
-        <label for="Email">Volunteers Email Address</label>
-        <input type="email" name="email" placeholder="Enter Email" required>
+            </label>
+            <label> Enter Your Last Name
+                <input type="text" required>
 
-        <label for="Volunteer Phone">Volunteers Phone Number</label>
-        <input type="tel" name="Phone" placeholder="Enter Telephone" required>
+            </label>
+            <label> Enter Your Email Address
+                <input type="email" required>
+
+            </label>
+            <label> Enter Your Phone Number
+                <input type="tel" required>
+                <div></div>
+                <label> Tell Us About Yourself</label>
+                <textarea type="message" placeholder="Tell Us About Yourself" required></textarea>
+
+            </label>
+
+
+        </fieldset>
+
+        <fieldset> How Many Years of Experience Do You Have With Dogs?
+            <label>
+                <input type="radio" required name="Years" /> 1 Year
+
+                <input type="radio" required name="Years"> 2 Years
+
+                <input type="radio" required name="Years"> 3+ Years
+
+            </label>
+            <label>
+                <input type="checkbox" required> I Accept the <a href="./Terms.html" target="_blank">Terms And
+                    Conditions</a>
+            </label>
+            <input type="submit" value="Submit">
+
+        </fieldset>
+
 
     </form>
 
@@ -113,9 +146,10 @@
         <h2 id="contact">Contact Us</h2>
         <p>Phone Number: 61 123456789</p>
         <p>Address: 1800 Nowehere Street</p>
+        <p>Email Address: SaveTheCorgis@corgi.com.au</p>
     </div>
 
-    <footer> This Is a Project with no real sponsors, all image rights belong to their original owners</footer>
+    <footer> This is a project with no real sponsors, all images rights belong to their original owners</footer>
 </body>
 
 </html>

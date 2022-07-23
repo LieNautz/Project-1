@@ -6,7 +6,8 @@ body {
     background-color: mistyrose;
     margin: 70px;
     border: 3px rgb(169, 37, 37) dotted;
-    width: 90%;   
+    width: 90%;
+    color: rgb(169, 37, 37);   
 }
 
 html {
@@ -26,11 +27,17 @@ h1 {
 
 }
 
+.box div {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 2px;
+}
+
 #gallery { /*This is the container for the images */
     display: inline-flex; 
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     padding: 0 4px;
     color: rgb(169, 37, 37);
@@ -40,14 +47,48 @@ h1 {
 }
 
 #gallery img { /*This is to edit the items inside the container */
-    width: 20%;
-    height: 250px;
+    width: 22%;
+    height: 20vh;
     object-fit: fill;
     margin-top: 8px;
     padding: 0 2px;
     border-radius: 10px;
+    
+  }
+
+  #gallery img:hover {
+    background-color: red;
+    border: 2px dotted red;
   }
   
+
+#recent {
+display: inline-flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4px;
+    color: rgb(169, 37, 37);
+    border: 2px rgb(169, 37, 37) dotted;
+    width: 80%;
+    margin-left: 100px;
+}
+
+#recent img {
+    width: 22%;
+    height: 20vh;
+    object-fit: fill;
+    margin-top: 8px;
+    padding: 0 2px;
+    border-radius: 10px;
+}
+
+#recent img:hover {
+    border: 2px dotted red;
+    background-color: red;
+}
+
 h2 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
@@ -59,14 +100,15 @@ p {
 }
 
 
-
  #sponsors {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
+    width: 95%;
     background: mistyrose;
+    margin-left: 30px;
+    margin-right: 30px;
  } 
 
  #sponsors img {
@@ -74,11 +116,19 @@ p {
     width: 50%;
     height: 100px;
     background-color: mistyrose;
-    padding: 20px;
-    margin-right: 5px;
-    
+    justify-content: space-evenly;
  }
 
+ #sponsors img:hover {
+    border: 2px solid red;
+ }
+
+ /*This is to edit the forms section*/
+
+ label {
+    display: block;
+    margin: 0.5rem 0;
+ }
 
 
 @media  (max-width: 800px) {
@@ -101,5 +151,6 @@ p {
 }
 
 footer {
-    text-align:end
+    text-align:end;
+    font-size: 20px
 }
