@@ -1,156 +1,131 @@
 body * {
-    box-sizing: content-box;
+box-sizing: content-box;
 }
 
 body {
-    background-color: mistyrose;
-    margin: 70px;
-    border: 3px rgb(169, 37, 37) dotted;
-    width: 90%;
-    color: rgb(169, 37, 37);   
+background-color: mistyrose;
+margin: 0 auto;
+border: 3px rgb(169, 37, 37) dotted;
+max-width: 90%;
+color: rgb(169, 37, 37);   
 }
 
 html {
-    background-image: url(./Images/dc135c0cc37a0f924fde466134e0e82d.jpg);
-    background-size: cover;
+background-image: url(./Images/dc135c0cc37a0f924fde466134e0e82d.jpg);
+background-size: fill;
 }
 
 h1 {
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 40px;
-    color: rgb(169, 37, 37);
+text-align: center;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 40px;
+color: rgb(169, 37, 37);
 }
 
-.box h2 {
-    color: rgb(169, 37, 37);
+.contents {
+text-align: center;
+}
+
+h3 {
+text-align: center;
+}
+
+.container {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+max-width: 80%;
+background: mistyrose;
+border: 2px red dotted;
+margin: 0 auto;  
+}
+
+
+.container img {
+max-width: 30%;
+height: 30vh;
+object-fit: fill;
+margin-top: 8px;
+padding: 0 4px;
+border-radius: 10px;
 
 }
 
-.box div {
-    font-size: 20px;
-    text-align: center;
-    margin-top: 2px;
-}
-
-#gallery { /*This is the container for the images */
-    display: inline-flex; 
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 0 4px;
-    color: rgb(169, 37, 37);
-    border: 2px rgb(169, 37, 37) dotted;
-    width: 80%;
-    margin-left: 100px;
-}
-
-#gallery img { /*This is to edit the items inside the container */
-    width: 22%;
-    height: 20vh;
-    object-fit: fill;
-    margin-top: 8px;
-    padding: 0 2px;
-    border-radius: 10px;
-    
-  }
-
-  #gallery img:hover {
-    background-color: red;
-    border: 2px dotted red;
-  }
-  
-
-#recent {
-display: inline-flex; 
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 0 4px;
-    color: rgb(169, 37, 37);
-    border: 2px rgb(169, 37, 37) dotted;
-    width: 80%;
-    margin-left: 100px;
-}
-
-#recent img {
-    width: 22%;
-    height: 20vh;
-    object-fit: fill;
-    margin-top: 8px;
-    padding: 0 2px;
-    border-radius: 10px;
-}
-
-#recent img:hover {
-    border: 2px dotted red;
-    background-color: red;
+.container img:hover {
+border: 2px dotted red;
 }
 
 h2 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-    color: rgb(169, 37, 37);
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+text-align: center;
+color: rgb(169, 37, 37);
 }
 
 p {
-    font-size: 20px;
+font-size: 20px;
+}
+
+#sponsors {
+display: flex;
+width: 100%;
+justify-content: center;
+}
+
+#sponsors img {
+object-fit: contain;
+width: 50%;
+height: 100px;
+background-color: mistyrose;
+justify-content: space-between;
+}
+
+#sponsors img:hover {
+border: 2px solid black;
 }
 
 
- #sponsors {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 95%;
-    background: mistyrose;
-    margin-left: 30px;
-    margin-right: 30px;
- } 
-
- #sponsors img {
-    object-fit: contain;
-    width: 50%;
-    height: 100px;
-    background-color: mistyrose;
-    justify-content: space-evenly;
- }
-
- #sponsors img:hover {
-    border: 2px solid red;
- }
-
- /*This is to edit the forms section*/
-
- label {
-    display: block;
-    margin: 0.5rem 0;
- }
-
-
-@media  (max-width: 800px) {
-    #gallery img {
-        width: 50%;
-    }
+label {
+display: block;
+margin: 0.5rem 0;
 }
 
-@media (max-width: 600px) {
-    #gallery img {
-        width: 100px;
-    }
-}
-
-@media (max-width 1000px)
-{ #gallery img {
-    width: 80%;
-    height: 200px;
-}
-}
 
 footer {
-    text-align:end;
-    font-size: 20px
+text-align:end;
+font-size: 20px
+}
+
+@media (max-width: 400px) {
+.container img {
+width: 100%;
+display: flex;
+flex-direction: column;
+object-fit: fill;
+clear: both;
+}
+}
+
+@media (max-width: 400px) {
+footer {
+    text-align: end;
+    font-size: 15px;    
+}
+}
+
+a:visited {
+color: blue;
+}
+
+a:hover {
+color: red;
+}
+
+a {
+text-decoration: none;
+font-size: 18px;
+}
+
+form {
+text-align: center;
 }
