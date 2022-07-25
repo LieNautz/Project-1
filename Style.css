@@ -98,12 +98,18 @@ text-align:end;
 font-size: 20px
 }
 
-@media (max-width: 400px) {
+@media (max-width: 375px) {
 .container img {
 width: 50%;
 height:auto;
 
 }
+}
+
+@media (max-width: 375px) {
+    #sponsors img {
+        width: 50%;
+    }
 }
 
 @media (max-width: 400px) {
